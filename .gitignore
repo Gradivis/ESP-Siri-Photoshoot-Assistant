@@ -1,0 +1,4 @@
+firmware/secrets.py
+__pycache__/
+.DS_Store
+*.bin
