@@ -71,9 +71,14 @@ Protocol details come from [NeewerLite-Python](https://github.com/taburineagle/N
 
 ## Roadmap
 
-- IR transmitter and receiver: learn and replay codes for IR-only lights, and fire a Canon camera with RC-6 codes.
+- **IR support.** A TSOP38238 receiver to learn remote codes; high-power TSAL6200 LEDs (3 in series per string on a 12 V supply, driven by a 2N2222/logic-level MOSFET) plus stick-on 3.5 mm IR emitter cables placed right at each light's sensor and the camera. Replay codes for IR-only lights and fire a Canon camera with RC-6 codes.
+- **Remote-adding assistant.** A web page served by the ESP32 (no app): name a device, pick a template, then "point the remote at the box and press Power", tick, next button, test, save. Learned devices join the looks and shoot mode.
+- **Web control panel** on the same page: per-light colour and brightness, look buttons, shoot-mode timer.
+- **Easy setup (quality of life):** scan for compatible lights and tap to pair; Wi-Fi setup without editing files; one-tap Siri phrase setup.
+- **Optional touchscreen**, only if it stays simple: a small screen that shows the same web panel.
 - Per-look Siri phrases ("Hey Siri, noir").
 - Optional Home Assistant integration (ESPHome port).
+- Single 12 V power input (e.g. from a portable power station) for the ESP32 and IR LEDs, plus a travel router for location shoots.
 
 ## Licence
 
